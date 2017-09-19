@@ -12,9 +12,16 @@
 		6D531B131F70EEEA004C2171 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D531B111F70EEEA004C2171 /* Main.storyboard */; };
 		6D531B151F70EEEA004C2171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D531B141F70EEEA004C2171 /* Assets.xcassets */; };
 		6D531B181F70EEEA004C2171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D531B161F70EEEA004C2171 /* LaunchScreen.storyboard */; };
+		6D531B251F70EFC3004C2171 /* MMOpenCVHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6D531B241F70EFC3004C2171 /* MMOpenCVHelper.mm */; };
+		6D531B271F70EFF1004C2171 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D531B261F70EFF1004C2171 /* libc++.tbd */; };
+		6D531B291F70EFFB004C2171 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D531B281F70EFFB004C2171 /* libz.tbd */; };
+		8255A4DAA94904BFA3BB506F /* Pods_OpenCV_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46640A8742752D82D083FBF9 /* Pods_OpenCV_Demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46640A8742752D82D083FBF9 /* Pods_OpenCV_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenCV_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DAE4EEB414F67927F7422A0 /* Pods-OpenCV-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCV-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenCV-Demo/Pods-OpenCV-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		5958981D3F88B748A299E5E5 /* Pods-OpenCV-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCV-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenCV-Demo/Pods-OpenCV-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		6D531B0A1F70EEEA004C2171 /* OpenCV-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenCV-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D531B0D1F70EEEA004C2171 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D531B0F1F70EEEA004C2171 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,11 @@
 		6D531B141F70EEEA004C2171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D531B171F70EEEA004C2171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D531B191F70EEEA004C2171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D531B1F1F70EFA8004C2171 /* OpenCV-Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenCV-Demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		6D531B231F70EFC3004C2171 /* MMOpenCVHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMOpenCVHelper.h; sourceTree = "<group>"; };
+		6D531B241F70EFC3004C2171 /* MMOpenCVHelper.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = MMOpenCVHelper.mm; sourceTree = "<group>"; };
+		6D531B261F70EFF1004C2171 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		6D531B281F70EFFB004C2171 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D531B291F70EFFB004C2171 /* libz.tbd in Frameworks */,
+				6D531B271F70EFF1004C2171 /* libc++.tbd in Frameworks */,
+				8255A4DAA94904BFA3BB506F /* Pods_OpenCV_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14A864555F4641610221A6B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D531B281F70EFFB004C2171 /* libz.tbd */,
+				6D531B261F70EFF1004C2171 /* libc++.tbd */,
+				46640A8742752D82D083FBF9 /* Pods_OpenCV_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		351BBCA822B9F5184D3FE22B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5958981D3F88B748A299E5E5 /* Pods-OpenCV-Demo.debug.xcconfig */,
+				4DAE4EEB414F67927F7422A0 /* Pods-OpenCV-Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6D531B011F70EEEA004C2171 = {
 			isa = PBXGroup;
 			children = (
 				6D531B0C1F70EEEA004C2171 /* OpenCV-Demo */,
 				6D531B0B1F70EEEA004C2171 /* Products */,
+				351BBCA822B9F5184D3FE22B /* Pods */,
+				14A864555F4641610221A6B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +90,15 @@
 		6D531B0C1F70EEEA004C2171 /* OpenCV-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				6D531B231F70EFC3004C2171 /* MMOpenCVHelper.h */,
+				6D531B241F70EFC3004C2171 /* MMOpenCVHelper.mm */,
 				6D531B0D1F70EEEA004C2171 /* AppDelegate.swift */,
 				6D531B0F1F70EEEA004C2171 /* ViewController.swift */,
 				6D531B111F70EEEA004C2171 /* Main.storyboard */,
 				6D531B141F70EEEA004C2171 /* Assets.xcassets */,
 				6D531B161F70EEEA004C2171 /* LaunchScreen.storyboard */,
 				6D531B191F70EEEA004C2171 /* Info.plist */,
+				6D531B1F1F70EFA8004C2171 /* OpenCV-Demo-Bridging-Header.h */,
 			);
 			path = "OpenCV-Demo";
 			sourceTree = "<group>";
@@ -71,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D531B1C1F70EEEA004C2171 /* Build configuration list for PBXNativeTarget "OpenCV-Demo" */;
 			buildPhases = (
+				78070F8AED5CC355606699F3 /* [CP] Check Pods Manifest.lock */,
 				6D531B061F70EEEA004C2171 /* Sources */,
 				6D531B071F70EEEA004C2171 /* Frameworks */,
 				6D531B081F70EEEA004C2171 /* Resources */,
+				65802C35BC8B4D0D38FFA240 /* [CP] Embed Pods Frameworks */,
+				3668EA2DC27846A6DD24FC3C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +139,7 @@
 					6D531B091F70EEEA004C2171 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = AZ7XCV3ZTE;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,11 +175,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3668EA2DC27846A6DD24FC3C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenCV-Demo/Pods-OpenCV-Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65802C35BC8B4D0D38FFA240 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenCV-Demo/Pods-OpenCV-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78070F8AED5CC355606699F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6D531B061F70EEEA004C2171 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D531B251F70EFC3004C2171 /* MMOpenCVHelper.mm in Sources */,
 				6D531B101F70EEEA004C2171 /* ViewController.swift in Sources */,
 				6D531B0E1F70EEEA004C2171 /* AppDelegate.swift in Sources */,
 			);
@@ -261,26 +353,36 @@
 		};
 		6D531B1D1F70EEEA004C2171 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5958981D3F88B748A299E5E5 /* Pods-OpenCV-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = AZ7XCV3ZTE;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "OpenCV-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Infinx.OpenCV-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCV-Demo/OpenCV-Demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		6D531B1E1F70EEEA004C2171 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DAE4EEB414F67927F7422A0 /* Pods-OpenCV-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = AZ7XCV3ZTE;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "OpenCV-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Infinx.OpenCV-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCV-Demo/OpenCV-Demo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +406,7 @@
 				6D531B1E1F70EEEA004C2171 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
